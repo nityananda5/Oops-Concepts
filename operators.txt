@@ -1,0 +1,38 @@
+//cout<<obj1<<obj2;
+ostream& operator<<(className & COUT,className&obj){
+  COUT<<"obj.name";
+  return COUT;
+}  
+//cout<<obj1;
+void operator<<(className & COUT,className&obj){
+  COUT<<"obj.name";
+  }
+//obj++
+void operator++(){
+  var++;
+}
+//++obj
+void operator++(){
+  ++var;
+}
+//t=ob1+ob2;
+className operator+(className & obREf){
+  int temp;
+  temp.var=var+var.ob1;
+  return temp;
+}
+//ob+=ob1;
+className operator+=(className & obREf){
+  
+  this->var=obREf.ob1+this->var;
+  return *this;
+}
+//ob-=ob1;
+className operator-=(className & obREf){
+ 
+  this->var=obREf.ob1-this->var;
+  return *this;
+}
+
+
+

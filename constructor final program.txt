@@ -1,0 +1,29 @@
+#include <iostream>
+#include<string>
+using namespace std;
+class x{
+    string name;
+    int ram;
+    string processor;
+    int battery;
+    public :
+    x(string n="NULL",int r=0,string p="NULL",int b=0){
+        name=n;
+        ram=r;
+        battery=b;
+        processor=p;
+    }
+    void getData(){
+        cout<<name<<endl;
+        cout<<ram<<endl;
+        cout<<battery<<endl;
+        cout<<processor<<endl;
+    }
+};
+int main() {
+    
+    x d;
+    d.getData();
+
+    return 0;
+}
